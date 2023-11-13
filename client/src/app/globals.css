@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+--foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+ 
+}
+
+.basic_link{
+  @apply text-white no-underline
+}
+
+.nav_link{
+  @apply text-gray-200 no-underline
+}
+
+.white_box{
+  @apply bg-gray-50 p-5 h-[180px] text-center flex items-center justify-center rounded-lg
+}
+
+/* CART PAGE */
+
+.cart_button{
+  @apply bg-blue-300 rounded-lg text-white py-1 px-4 cursor-pointer inline-flex items-center gap-1 hover:bg-blue-500
+}
+
+.cart_table{
+  @apply w-full 
+}
+
+.cart_table button{
+  @apply mx-3 border rounded-lg min-w-[30px] hover:bg-white
+}
+
+.cart_table td{
+  @apply max-w-[100px] border-t
+}
+
+.cart_table th{
+  @apply text-left uppercase text-gray-400 font-normal text-sm
+}
+
+.cart_imagebox{
+  @apply max-w-[150px] max-h-[150px] p-2 bg-white rounded-lg shadow-md flex items-center justify-center mb-2
+}
+.cart_table img{
+  @apply max-w-[100px] p-1 rounded-lg
+}
+
+.cart_input{
+  @apply w-full p-1 mb-3 border rounded-md box-border
+}
